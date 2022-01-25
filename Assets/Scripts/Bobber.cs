@@ -9,6 +9,12 @@ public class Bobber : MonoBehaviour
     private float yMin = 0.5f;
     private int direction = 1;
 
+    void Start()
+    {
+        yMax += transform.position.y;
+        yMin += transform.position.y;
+    }
+
     // Update is called once per frame
     void Update()
     {
